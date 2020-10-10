@@ -129,7 +129,16 @@ def main():
             break
 
     if isBoardFull(board):
-        print('TIE GAME!  BOARD FULL')
-
+        print('TIE GAME!  BOARD FULL!')
 
 main()
+
+while True:
+    answer=input('DO YOU WANT TO PLAY AGAIN (Y/N)?')
+    if answer.lower() == 'y' or answer.lower == 'yes':
+        board = [' ' for x in range(10)]
+        print('*********************************')
+        main()
+    else:
+        break
+   
